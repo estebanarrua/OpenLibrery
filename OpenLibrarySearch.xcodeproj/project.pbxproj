@@ -12,6 +12,8 @@
 		A7DC14311CCD6ADA00FF273B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7DC142F1CCD6ADA00FF273B /* Main.storyboard */; };
 		A7DC14331CCD6ADA00FF273B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7DC14321CCD6ADA00FF273B /* Assets.xcassets */; };
 		A7DC14361CCD6ADA00FF273B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7DC14341CCD6ADA00FF273B /* LaunchScreen.storyboard */; };
+		A7DC143E1CCDC55100FF273B /* ConectServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC143D1CCDC55100FF273B /* ConectServer.swift */; };
+		A7DC14401CCDD85700FF273B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7DC143F1CCDD85700FF273B /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A7DC14321CCD6ADA00FF273B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7DC14351CCD6ADA00FF273B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7DC14371CCD6ADA00FF273B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7DC143D1CCDC55100FF273B /* ConectServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConectServer.swift; sourceTree = "<group>"; };
+		A7DC143F1CCDD85700FF273B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		A7DC141F1CCD6ADA00FF273B = {
 			isa = PBXGroup;
 			children = (
+				A7DC143F1CCDD85700FF273B /* Default-568h@2x.png */,
 				A7DC142A1CCD6ADA00FF273B /* OpenLibrarySearch */,
 				A7DC14291CCD6ADA00FF273B /* Products */,
 			);
@@ -60,6 +65,7 @@
 				A7DC14321CCD6ADA00FF273B /* Assets.xcassets */,
 				A7DC14341CCD6ADA00FF273B /* LaunchScreen.storyboard */,
 				A7DC14371CCD6ADA00FF273B /* Info.plist */,
+				A7DC143D1CCDC55100FF273B /* ConectServer.swift */,
 			);
 			path = OpenLibrarySearch;
 			sourceTree = "<group>";
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					A7DC14271CCD6ADA00FF273B = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 695ZHFBGUE;
 					};
 				};
 			};
@@ -123,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7DC14361CCD6ADA00FF273B /* LaunchScreen.storyboard in Resources */,
+				A7DC14401CCDD85700FF273B /* Default-568h@2x.png in Resources */,
 				A7DC14331CCD6ADA00FF273B /* Assets.xcassets in Resources */,
 				A7DC14311CCD6ADA00FF273B /* Main.storyboard in Resources */,
 			);
@@ -135,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7DC143E1CCDC55100FF273B /* ConectServer.swift in Sources */,
 				A7DC142E1CCD6ADA00FF273B /* ViewController.swift in Sources */,
 				A7DC142C1CCD6ADA00FF273B /* AppDelegate.swift in Sources */,
 			);
@@ -251,10 +260,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = OpenLibrarySearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = esteban.OpenLibrarySearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = OpenLibrarySearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = esteban.OpenLibrarySearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
