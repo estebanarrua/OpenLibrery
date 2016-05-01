@@ -13,7 +13,6 @@
 		A7DC14331CCD6ADA00FF273B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7DC14321CCD6ADA00FF273B /* Assets.xcassets */; };
 		A7DC14361CCD6ADA00FF273B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7DC14341CCD6ADA00FF273B /* LaunchScreen.storyboard */; };
 		A7DC143E1CCDC55100FF273B /* ConectServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC143D1CCDC55100FF273B /* ConectServer.swift */; };
-		A7DC14401CCDD85700FF273B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7DC143F1CCDD85700FF273B /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		A7DC14351CCD6ADA00FF273B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7DC14371CCD6ADA00FF273B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7DC143D1CCDC55100FF273B /* ConectServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConectServer.swift; sourceTree = "<group>"; };
-		A7DC143F1CCDD85700FF273B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +40,6 @@
 		A7DC141F1CCD6ADA00FF273B = {
 			isa = PBXGroup;
 			children = (
-				A7DC143F1CCDD85700FF273B /* Default-568h@2x.png */,
 				A7DC142A1CCD6ADA00FF273B /* OpenLibrarySearch */,
 				A7DC14291CCD6ADA00FF273B /* Products */,
 			);
@@ -130,7 +127,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7DC14361CCD6ADA00FF273B /* LaunchScreen.storyboard in Resources */,
-				A7DC14401CCDD85700FF273B /* Default-568h@2x.png in Resources */,
 				A7DC14331CCD6ADA00FF273B /* Assets.xcassets in Resources */,
 				A7DC14311CCD6ADA00FF273B /* Main.storyboard in Resources */,
 			);
@@ -303,6 +299,7 @@
 				A7DC143C1CCD6ADA00FF273B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

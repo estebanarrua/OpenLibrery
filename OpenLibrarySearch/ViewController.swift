@@ -12,7 +12,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     var conectServer:ConectServer = ConectServer()
     @IBOutlet weak var TFIsbn: UITextField!
-    @IBOutlet weak var TVRespuesta: UITextView!
+    @IBOutlet weak var LTitulo: UILabel!
+    @IBOutlet weak var IEPortada: UIImageView!
+    @IBOutlet weak var LAutores: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +31,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         sender.resignFirstResponder()
         conectServer.isbn = sender.text!
         let text = conectServer.connect()
-        if(text == "Error"){
-            TVRespuesta.text = ""
+        if(text == "CONN_Error"){
             let alerta = UIAlertController(title: "Error", message: "No tiene conexion a internet", preferredStyle: UIAlertControllerStyle.Alert)
             let accion = UIAlertAction(title: "Salir" , style: UIAlertActionStyle.Cancel ,handler: {alerAction in
                 
@@ -38,7 +39,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
             alerta.addAction(accion)
             self.presentViewController(alerta, animated: true, completion: nil)
         }else{
-            TVRespuesta.text = text
+            if(conectServer.titulo != ""){
+                LTitulo.text = conectServer.titulo
+            }else{
+                LTitulo.text = "Sin Titulo"
+            }
+            
+            if(conectServer.portada != nil){
+                IEPortada.image = conectServer.portada!
+            }
+            
+            if(conectServer.autores.count > 0){
+                for autor in conectServer.autores{
+                    LAutores.text = "\(autor)\n"
+                }
+            }else{
+                LAutores.text = "Autores desconocidos."
+            }
         }
         
     }
